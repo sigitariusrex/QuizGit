@@ -1,0 +1,37 @@
+BEGIN TRANSACTION;
+INSERT INTO "Question" VALUES (1,'1. Tempat Duduk Kulit
+2. Tempat Menyimpan Baju
+
+Tebak dua nama benda itu?','https://ia801505.us.archive.org/0/items/pdsgambarruangtamu/PDS%20Gambar%20Ruang%20Tamu.png','A. Kasur','B. Sofa','C. Meja','D. Lemari','B,D',1,2);
+INSERT INTO "Question" VALUES (2,'1. Tempat Menaruh Benda
+2. Tempat Menonton Acara
+
+Tebak dua nama benda itu?','https://ia801508.us.archive.org/18/items/pdsgambarruangtamu2/PDS%20Gambar%20Ruang%20Tamu%202.png','A. Kursi','B. Meja','C. TV','D. Radio','B,C',1,2);
+INSERT INTO "Question" VALUES (3,'1. Alat Hembusan Angin
+2. Alat Hitungan Waktu
+
+Tebak dua nama benda itu?','https://ia801406.us.archive.org/1/items/pdsgambarruangtamu3_20190818/PDS%20Gambar%20Ruang%20Tamu%203.png','A. Kipas Angin','B. Bola','C. Jam Dinding','D. AC','A,C',1,2);
+INSERT INTO "Question" VALUES (4,'1. Alat Hembusan Angin
+2. Alat Hitungan Waktu
+
+Tebak dua nama benda itu?','https://ia801503.us.archive.org/28/items/pdskamarmandi/PDS%20Kamar%20Mandi.png','A. WC','B. Keran Air','C. Sabun','D. Sikat Gigi','C,D',1,1);
+INSERT INTO "Question" VALUES (5,'1. Benda Membersihkan Gigi
+2. Alat Menampung Air
+
+Tebak dua nama benda itu?','https://ia801408.us.archive.org/12/items/pdskamarmandi2/PDS%20Kamar%20Mandi%202.png','A. Sabun','B. Pasta Gigi / Odol','C. Ember','D. Keran Air','B,C',1,1);
+INSERT INTO "Question" VALUES (6,'1. Alat Menampung Air Keran
+2. Alat Membuang Kotoran
+
+Tebak dua nama benda itu?','https://ia801407.us.archive.org/21/items/pdskamarmandi3/PDS%20Kamar%20Mandi%203.png','A. Bak Mandi','B. Pel','C. Sapu','D. WC','A,D',1,1);
+INSERT INTO "Question" VALUES (21,'Paman ingin menarik logam dan memisahkan dari barang rongsokan lainnya menggunakan alat seperti pada di gambar. Gaya yang digunakan pada alat tersebut adalah...','https://lh6.googleusercontent.com/itnkiuTlHDSbSW_N-GuIPyPWuUmrYcaeIi4AWqw_3QhNqxvO0pXqTBVltO864of_i5sorPrMHYxlupbTji53Y-R4QrvPVWtpDrNf_O4vjcDozjnOZadLnThKge0-fYPQt6lc8IRuTvNDrhEKAw','A. gravitasi','B. pegas','C. gesek','D. magnet','D',1,3);
+INSERT INTO "Question" VALUES (22,'Alat musik seperti pada di gambar dapat mengubah energi .... menjadi energi bunyi','https://lh3.googleusercontent.com/Bty5SqjazglfTN0bJw8p-PZuv-nb21E2k_5-f3wDTchvyiEY24GS7oLhA9_aO_Ci85y3bbj_BRPTFuGNgR5TUNvaxmx4kw9KrtvjTS242paLUHvPyWaSBw0lJt-AaWU5ymtz5bmbvo3yHGp4XQ','A. gerak','B. panas','C. listrik','D. kimia','A',1,3);
+INSERT INTO "Question" VALUES (23,'Jika saklar E dan G disambung, maka lampu yang menyala adalah ....','https://lh3.googleusercontent.com/5AE2xn824Nu54C5MR6BU2kwZ-cCj2TJqTz0ZS7OL7t6xuGzGHLnlsIjaUJqTB8qZv83j5oC2vFn4m8TsIRSLHbrd_1QnGad5kutId-AY3xcSCTRAb_fAY3villGSQafPWa821q8RD8GlmSQAdA','A. lampu A, B, dan C','B. lampu B, C, dan D','C. lampu A, B, dan D','D. lampu A, C, dan D','D',1,3);
+INSERT INTO "Question" VALUES (31,'“The leaves are similar to basil leaves, but tend to be narrower ... slightly serrated edges.”
+
+What is the correct word to fill the blank?',NULL,'A. With','B. To','C. By','D. Of','A',0,4);
+INSERT INTO "Question" VALUES (32,'What is advertised from the text above?','https://blog.ruangguru.com/hs-fs/hubfs/2-77.png?width=241&name=2-77.png','A. Tea','B. Beverages','C. Perfume','D. Drinks','C',1,4);
+INSERT INTO "Category" VALUES (1,'Kamar Mandi','');
+INSERT INTO "Category" VALUES (2,'Ruang Tamu',NULL);
+INSERT INTO "Category" VALUES (3,'Ruang Kelas',NULL);
+INSERT INTO "Category" VALUES (4,'Ruang Makan',NULL);
+COMMIT;

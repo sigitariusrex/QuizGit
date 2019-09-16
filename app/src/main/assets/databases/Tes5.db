@@ -1,0 +1,21 @@
+BEGIN TRANSACTION;
+DROP TABLE IF EXISTS "Question";
+CREATE TABLE IF NOT EXISTS "Question" (
+	"ID"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+	"QuestionText"	TEXT,
+	"QuestionImage"	TEXT,
+	"AnswerA"	TEXT,
+	"AnswerB"	TEXT,
+	"AnswerC"	TEXT,
+	"AnswerD"	TEXT,
+	"CorrectAnswer"	TEXT,
+	"IsImageQuestion"	INTEGER,
+	"CategoryID"	INTEGER
+);
+DROP TABLE IF EXISTS "Category";
+CREATE TABLE IF NOT EXISTS "Category" (
+	"ID"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	"Name"	TEXT,
+	"Image"	TEXT
+);
+COMMIT;

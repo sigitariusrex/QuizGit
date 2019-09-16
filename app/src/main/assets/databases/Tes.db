@@ -1,0 +1,122 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "Question" (
+	"ID"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+	"QuestionText"	TEXT,
+	"QuestionImage"	TEXT,
+	"AnswerA"	TEXT,
+	"AnswerB"	TEXT,
+	"AnswerC"	TEXT,
+	"AnswerD"	TEXT,
+	"CorrectAnswer"	TEXT,
+	"IsImageQuestion"	INTEGER,
+	"CategoryID"	INTEGER
+);
+CREATE TABLE IF NOT EXISTS "Category" (
+	"ID"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	"Name"	TEXT,
+	"Image"	TEXT
+);
+INSERT INTO "Question" VALUES (1,'1. Tempat Duduk Kulit
+2. Tempat Menyimpan Baju
+
+Tebak dua nama benda itu?','https://ia801505.us.archive.org/0/items/pdsgambarruangtamu/PDS%20Gambar%20Ruang%20Tamu.png','A. Kasur','B. Sofa','C. Meja','D. Lemari','B,D',1,2);
+INSERT INTO "Question" VALUES (2,'1. Tempat Menaruh Benda
+2. Tempat Menonton Acara
+
+Tebak dua nama benda itu?','https://ia801508.us.archive.org/18/items/pdsgambarruangtamu2/PDS%20Gambar%20Ruang%20Tamu%202.png','A. Kursi','B. Meja','C. TV','D. Radio','B,C',1,2);
+INSERT INTO "Question" VALUES (3,'1. Alat Hembusan Angin
+2. Alat Hitungan Waktu
+
+Tebak dua nama benda itu?','https://ia801406.us.archive.org/1/items/pdsgambarruangtamu3_20190818/PDS%20Gambar%20Ruang%20Tamu%203.png','A. Kipas Angin','B. Bola','C. Jam Dinding','D. AC','A,C',1,2);
+INSERT INTO "Question" VALUES (11,'Aku bersujud kepadamu
+Tuk memohon ampunanmu
+Aku berdoa kepadamu
+Tuk mengarapkan surgamu
+
+Maksud isi syair tersebut adalah…',NULL,'A. Jika mengharapkan surga, maka laksanakanlah perintah Tuhan dan memohon ampunan.','B. Jika mengharap surga, maka bersedekahlah kepada fakir miskin.','C. Jika melawan orang tua maka akan masuk neraka.','D. Memohon ampunan Tuhan setelah melakukan kesalahan.','A',0,1);
+INSERT INTO "Question" VALUES (12,'Cara Membuat Jus Jambu Segar
+1. Kemudian tuang air kedalamnya lalu tambahkan gula pasir dan susu kental manis secukupnya
+2. Kupas kulit buah jambu yang sudah matang sampai bersih
+3. Jus jambu biji siap untuk dinikmati
+4. Masukkan juga es batu yang sudah dihancurkan kedalam blender
+5. Setelah itu, jambu dipotong-potong dengan ukuran sesuai selera
+6. Blender dengan kecepatan sedang dan tunggu sampai benar-benar halus dan lembut
+7. Masukkan potongan jambu kedalam blender
+8. Tuang kedalam gelas saji sambil sambil disaring supaya jus jambu lebih halus lagi
+
+Urutan yang tepat untuk membuat jus jambu segar adalah….',NULL,'A. 2 – 1 – 4 – 7 – 5 – 6 – 8 – 3','B. 2 – 7 – 4 – 6 – 1 – 3 – 8 – 5','C. 2 – 5 – 7 – 1 – 6 – 4 – 8 – 3','D. 2 – 5 – 7 – 1 – 4 – 6 – 8 – 3','D',0,1);
+INSERT INTO "Question" VALUES (13,'Baterai anda sering error?
+Cepat lowbat?
+Ini solusinya!
+Kapasitas tinggi!
+Tidak mudah gembung!
+Uji coba barang kami selama 7 hari
+Tunggu apa lagi?
+
+Kalimat yang tepat untuk melengkapi iklan tersebut adalah…',NULL,'A. Ayo dapatkan baterai idol sekarang juga.','B. 100% garansi dijamin pembeli.','C. Baterai idol mempunyai warna menarik.','D. Kualitas baterai idol kurang memuaskan.','A',0,1);
+INSERT INTO "Question" VALUES (14,'Aku sangat senang sekali membaca buku. Terkadang karena keasyikan membaca, aku tidak mendengar teman yang berbicara kepadaku. Oleh karena itu aku dijuluki “si kutu buku”. Aku tidak marah dijuluki seperti itu. Kata ibu kutu buku itu artinya orang yang sangat gemar membaca buku.
+
+Perbaikan yang tepat pada kalimat pertama paragraf di atas adalah…',NULL,'A. Aku sangat senang membaca buku.','B. Saking asyiknya membaca aku sampai tidak fokus.','C. Aku dijuluki dengan nama “si kutu buku”','D. Kutu buku adalah orang yang sanfat gemar membaca buku.','A',0,1);
+INSERT INTO "Question" VALUES (15,'Kalimat berikut yang menggunakan tanda koma dengan benar adalah…',NULL,'A. Toko kue, dan toko sayur letaknya bersebelahan.','B. Aisyah, Fatimah, dan Khadijah belajar bersama.','C. Ibu pergi ke pasar untuk berbelanja buah duku, salak dan manggis.','D. Adik menabung sebesar Rp. 150,000','B',0,1);
+INSERT INTO "Question" VALUES (16,'Syafa membeli obat di apotik dengan menggunakan resep dokter.
+
+Perbaikan kata yang dicetak tebal di atas adalah….',NULL,'A. apotik','B. apotic','C. avotek','D. apotek','D',0,1);
+INSERT INTO "Question" VALUES (17,'Setiap pagi hari Saddam membantu menyiapkan kue buatan ibunya untuk dibawa ke sekolah. Di sekolah, kue buatan ibunya itu akan dititipkan di kantin sekolah. Sepulang sekolah, Saddam akan membantu ibunya berjualan kue keliling kampungnya.
+
+Penggambaran watak tokoh dalam cerpen tersebut dengan cara....',NULL,'A. Dialog antartokoh','B. Perilaku tokoh','C. Secara langsung','D. Pikiran tokoh','B',0,1);
+INSERT INTO "Question" VALUES (18,'What is the longest river in Europe?',NULL,'A. Tiber','B. Nyle','C. Wolga river','D. Wolga river','D',0,1);
+INSERT INTO "Question" VALUES (19,'1.Masak air sampai mendidih
+2.Kemudian tuang ke dalam cetakan
+3.Sediakan agar-agar, gula, santan, susu cokelat, vanili, dan telur
+4.Setelah mendidih, masukan agar-agar, vanili, gula, telur yang sudah dikocok, dan santan
+5.Biarkan sampai mendidih kembali, lalu angkat
+
+Urutan kalimat agar menjadi paragraf yang padu adalah….',NULL,'A. 1-2-3-4-5','B. 3-1-4-5-2','C. 4-1-3-2-5','D. 5-2-4-3-1','B',0,1);
+INSERT INTO "Question" VALUES (20,'Ruangan yang berukuran 5x7 m tersebut sangatlah nyaman ditempati. Dindingnya dicat dengan warna abu-abu dan sedikit corak coklat pastel pada sisi bawah. Tiga buah sofa berwarna merah, kuning, dan biru serta satu buah meja kayu ditempatkan di tengah ruangan. Di pojok ruangan terdapat sebuah rak buku berukuran besar. (....)
+
+Kalimat yang tepat untuk melengkapi paragraf deksripsi tersebut adalah....',NULL,'A. Rak ini sebagian besar memuat buku pelajaran, majalah, dan koran yang disusun rapi dan urut.','B. Terdapat pot yang menjadi tempat tumbuh pohon palem kecil yang bersandar ke rak buku bercat hijau tersebut.','C. Di luar ruangan terdapat sebuah taman bunga mungil yang berukuran 3 m x 4 m.','D. Taman bunga tersebut ditanami dengan bermacam tanaman hias, seperti mawar, melati, dan bugenvil.','A',0,1);
+INSERT INTO "Question" VALUES (21,'Paman ingin menarik logam dan memisahkan dari barang rongsokan lainnya menggunakan alat seperti pada di gambar. Gaya yang digunakan pada alat tersebut adalah...','https://lh6.googleusercontent.com/itnkiuTlHDSbSW_N-GuIPyPWuUmrYcaeIi4AWqw_3QhNqxvO0pXqTBVltO864of_i5sorPrMHYxlupbTji53Y-R4QrvPVWtpDrNf_O4vjcDozjnOZadLnThKge0-fYPQt6lc8IRuTvNDrhEKAw','A. gravitasi','B. pegas','C. gesek','D. magnet','D',1,3);
+INSERT INTO "Question" VALUES (22,'Alat musik seperti pada di gambar dapat mengubah energi .... menjadi energi bunyi','https://lh3.googleusercontent.com/Bty5SqjazglfTN0bJw8p-PZuv-nb21E2k_5-f3wDTchvyiEY24GS7oLhA9_aO_Ci85y3bbj_BRPTFuGNgR5TUNvaxmx4kw9KrtvjTS242paLUHvPyWaSBw0lJt-AaWU5ymtz5bmbvo3yHGp4XQ','A. gerak','B. panas','C. listrik','D. kimia','A',1,3);
+INSERT INTO "Question" VALUES (23,'Jika saklar E dan G disambung, maka lampu yang menyala adalah ....','https://lh3.googleusercontent.com/5AE2xn824Nu54C5MR6BU2kwZ-cCj2TJqTz0ZS7OL7t6xuGzGHLnlsIjaUJqTB8qZv83j5oC2vFn4m8TsIRSLHbrd_1QnGad5kutId-AY3xcSCTRAb_fAY3villGSQafPWa821q8RD8GlmSQAdA','A. lampu A, B, dan C','B. lampu B, C, dan D','C. lampu A, B, dan D','D. lampu A, C, dan D','D',1,3);
+INSERT INTO "Question" VALUES (24,'Jika bulan berada pada posisi 2 dan 4, maka gerhana yang terjadi adalah gerhana...','https://lh5.googleusercontent.com/eVE7pxGXZrKsXgbYcU4weDICfDamKDokJj2fJXvrJiQ7L2cJCLWmabB5rS26G2_YTnPSpNHxh5WIv35n9K3jk8hlcyDyF2tba0MlfbLcac8pn5MSVNCts2sJqFP0p35N4Nu8vjWHfweyGvf4rg','A. bulan total','B. bulan sebagian','C. matahari total','D. matahari sebagian','B',1,3);
+INSERT INTO "Question" VALUES (25,'Kegiatan manusia yang dapat mengganggu daur air berupa penyerapan air adalah …',NULL,'A. pelapisan jalan dengan aspal','B. pelapisan tanah dengan pasir','C. pembuatan biopori','D. pembuatan hutan lindung','A',0,3);
+INSERT INTO "Question" VALUES (26,'Hubungan yang terdapat seperti pada gambar merupakan simbiosis...','https://lh5.googleusercontent.com/rNTgijITi94qkOn4BpojpBb5iow74oNT5X2A7Fg_VlQY4OdzGT4KcK-ULaAR7LJF5YKrW-ndfkY749jVocym4s05GzPVBth8J97Zo0e_Tbx6MKAAdiLkUL_Cppfz-9ygdv7128igLuN_ChpaWg','A. komensalisme','B. parasitisme','C. mutualisme','D. habitat','C',1,3);
+INSERT INTO "Question" VALUES (27,'Fungsi bagian yang diberi tanda panah pada hewan di samping adalah untuk....','https://lh6.googleusercontent.com/eL8DafGD1qO_z4eCqyn598HJ1ne6qWoyp2JriFkB4V6njd21rEm49c7oy1XaqGDqljhE1K_DqrVD6GV5zr8KSwJPcdVyqLuUz-t57nMlv9j_mr1MVkBPgMdupQgjYwoCqCADqYdy-aumOS79cA','A. mengeluarkan tinta hitam','B. mengeluarkan bisa','C. mengelabuhi musuh','D. mengeluarkan duri tubuhnya','C',1,3);
+INSERT INTO "Question" VALUES (28,'Fungsi alat pernapasan yang ditunjuk oleh tanda panah adalah...','https://lh5.googleusercontent.com/fCXCLXZSdTiQ6OluW1aqvB52woifZgMNQVq0VRvZQ2n3j3y0e2kh2D5UQZZlVTzsNLR70QWrEn3qvc7nZk-WQ3fZJuT8I3eyauD4JX1Vb4Bci9k-lj39uyGGRbrOP8AbOMWFZizBT0ttnMnnaA','A. cabang tenggorokan','B. tempat bertukarnya oksigen dan karbon dioksida','C. penghubung antara hidung dan paru-paru','D. tempat masuknya udara','D',1,3);
+INSERT INTO "Question" VALUES (29,'1. akar tidak menancap di dasar perairan
+2. akar lebat untuk menjaga keseimbangan
+3. seluruh batangnya terdapat rongga udara
+
+Ciri-ciri tumbuhan tersebut dimiliki oleh….',NULL,'A. eceng gondok','B. teratai','C. kaktus','D. pohon mahoni','A',0,3);
+INSERT INTO "Question" VALUES (30,'Dasar perhitungan kalender Masehi/Hijriah adalah….',NULL,'A. revolusi bulan','B. rotasi bulan','C. revolusi bumi','D. rotasi bumi','C',0,3);
+INSERT INTO "Question" VALUES (31,'“The leaves are similar to basil leaves, but tend to be narrower ... slightly serrated edges.”
+
+What is the correct word to fill the blank?',NULL,'A. With','B. To','C. By','D. Of','A',0,4);
+INSERT INTO "Question" VALUES (32,'What is advertised from the text above?','https://blog.ruangguru.com/hs-fs/hubfs/2-77.png?width=241&name=2-77.png','A. Tea','B. Beverages','C. Perfume','D. Drinks','C',1,4);
+INSERT INTO "Question" VALUES (33,'Which Italian artist painted the Birth of Venus?',NULL,'A. Gold colored','B. Barcelona','C. Botticelli','D. Baram Stoker','C',0,5);
+INSERT INTO "Question" VALUES (34,'Who was the original author of Dracula?',NULL,'A. Gold colored','B. Barcelona','C. Botticelli','D. Baram Stoker','D',0,5);
+INSERT INTO "Question" VALUES (35,'In which city is the famous Manneken Pis fountain?',NULL,'A. Brussels','B. Barcelona','C. Botticelli','D. Baram Stoker','A',0,5);
+INSERT INTO "Question" VALUES (36,'Who is the inventor of photography?',NULL,'A. Daguerre','B. Barcelona','C. Botticelli','D. Baram Stoker','A',0,5);
+INSERT INTO "Question" VALUES (37,'What is the first book of the Old Testament?',NULL,'A. Genesis','B. Leonardo Da Vinci','C. Liverpool','D. Gustave Eiffel','A',0,5);
+INSERT INTO "Question" VALUES (38,'Who did the Mona Lisa paint?',NULL,'A. Genesis','B. Leonardo Da Vinci','C. Liverpool','D. Gustave Eiffel','B',0,5);
+INSERT INTO "Question" VALUES (39,'In which English town did Adolf Hitler study art?',NULL,'A. Genesis','B. Leonardo Da Vinci','C. Liverpool','D. Gustave Eiffel','C',0,5);
+INSERT INTO "Question" VALUES (40,'Which famous French engineer designed two bridges for the city of Porto?',NULL,'A. Genesis','B. Leonardo Da Vinci','C. Liverpool','D. Gustave Eiffel','D',0,5);
+INSERT INTO "Question" VALUES (41,'In which city can you see Michelangelos David?',NULL,'A. Florence','B. Menorah','C. A System of Jewish Mystical Beliefs','D. Michelangelo','A',0,5);
+INSERT INTO "Question" VALUES (42,'What is called the Jewish candlestick with special religious meaning?',NULL,'A. Florence','B. Menorah','C. A System of Jewish Mystical Beliefs','D. Michelangelo','B',0,5);
+INSERT INTO "Question" VALUES (43,'What is the Kabbalah?',NULL,'A. Florence','B. Menorah','C. A System of Jewish Mystical Beliefs','D. Michelangelo','C',0,5);
+INSERT INTO "Question" VALUES (44,'Who painted the ceiling of the Sistine Chapel?',NULL,'A. Florence','B. Menorah','C. A System of Jewish Mystical Beliefs','D. Michelangelo','D',0,5);
+INSERT INTO "Question" VALUES (45,'In which country was the famous painter El Greco born?',NULL,'A. Greece','B. Paris','C. Picasso','D. Verona','A',0,5);
+INSERT INTO "Question" VALUES (46,'n which city is the composer Frederic Chopin buried?',NULL,'A. Greece','B. Paris','C. Picasso','D. Verona','B',0,5);
+INSERT INTO "Question" VALUES (47,'Who did paint the famous painting Guernica?',NULL,'A. Greece','B. Paris','C. Picasso','D. Verona','C',0,5);
+INSERT INTO "Question" VALUES (48,'In which city did Romeo and Julia live?',NULL,'A. Greece','B. Paris','C. Picasso','D. Verona','D',0,5);
+INSERT INTO "Question" VALUES (49,'This is multi choice question',NULL,'A. Wrong Answer','B. Wrong Answer','C. Right Answer','D. Right Answer','C,D',0,5);
+INSERT INTO "Question" VALUES (50,'This is multi choice question 2',NULL,'A. Right Answer','B. Wrong Answer','C. Wrong Answer','D. Right Answer','A,D',0,5);
+INSERT INTO "Question" VALUES (51,'This is multi choice question 3',NULL,'A. Wrong Answer','B. Right Answer','C. Wrong Answer','D. Right Answer','B,D',0,5);
+INSERT INTO "Question" VALUES (52,'This is multi choice question 4',NULL,'A Right Answer','B. Wrong Answer','C. Right Answer','D. Wrong Answer','A,C',0,5);
+INSERT INTO "Question" VALUES (53,'This is multi choice question 5',NULL,'A Right Answer','B. Right Answer','C. Wrong Answer','D. Wrong Answer','A,B',0,5);
+INSERT INTO "Question" VALUES (54,'This is multi choice question 6',NULL,'A. Wrong Answer','B. Right Answer','C. Right Answer','D. Wrong Answer','B,C',0,5);
+INSERT INTO "Category" VALUES (1,'Kamar Mandi','');
+INSERT INTO "Category" VALUES (2,'Ruang Tamu',NULL);
+INSERT INTO "Category" VALUES (3,'Ruang Kelas',NULL);
+INSERT INTO "Category" VALUES (4,'Ruang Makan',NULL);
+COMMIT;
